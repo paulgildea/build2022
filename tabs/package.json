@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@fluent-blocks/react": "^9.0.0-alpha.7",
         "@fluentui/react-components": "^9.0.0-rc.6",
         "@microsoft/mgt-element": "2.4.1-next.teamsfx.3511fba",
         "@microsoft/mgt-react": "2.4.1-next.teamsfx.3511fba",
