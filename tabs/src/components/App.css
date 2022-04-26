@@ -1,0 +1,36 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(100, 100, 100, 0.5);
+	border-radius: 12px 12px 12px 12px;
+	margin: 0px auto;
+}
+
+html {
+	width: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+main > h1 {
+	display: none;
+}
+
+@media only screen and (max-width: 280px) {
+    main {
+		padding: 0px !important;
+		background-color: #1f1f1f !important;
+	}
+	main > section {
+		margin-top: 0 !important;
+	}
+	main > section > div {
+		width: 264px !important;
+	}
+}
+
+

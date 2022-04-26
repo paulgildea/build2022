@@ -11,8 +11,8 @@
         "termsOfUseUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/termsofuse"
     },
     "icons": {
-        "color": "resources/color.png",
-        "outline": "resources/outline.png"
+        "color": "resources/ContosoLogo.png",
+        "outline": "resources/ContosoLogoOutline.png"
     },
     "name": {
         "short": "{{config.manifest.appName.short}}",
@@ -32,15 +32,41 @@
             "scopes": [
                 "team",
                 "groupchat"
-            ]
+            ],
+            "context":[
+                "channelTab",
+                "privateChatTab",
+                "meetingChatTab",
+                "meetingDetailsTab",
+                "meetingSidePanel",
+                "meetingStage"
+             ]
         }
     ],
     "staticTabs": [
         {
             "entityId": "index",
-            "name": "Personal Tab",
-            "contentUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/tab",
-            "websiteUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/tab",
+            "name": "Home",
+            "contentUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/home",
+            "websiteUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/home",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "dashboard",
+            "name": "Dashboard",
+            "contentUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/inventory",
+            "websiteUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/inventory",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "inventory",
+            "name": "Inventory",
+            "contentUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/inventory",
+            "websiteUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/inventory",
             "scopes": [
                 "personal"
             ]

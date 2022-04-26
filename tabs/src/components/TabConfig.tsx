@@ -21,10 +21,10 @@ class TabConfig extends React.Component {
     microsoftTeams.settings.registerOnSaveHandler((saveEvent) => {
       const baseUrl = `https://${window.location.hostname}:${window.location.port}`;
       microsoftTeams.settings.setSettings({
-        suggestedDisplayName: "My Tab",
-        entityId: "Test",
-        contentUrl: baseUrl + "/index.html#/tab",
-        websiteUrl: baseUrl + "/index.html#/tab",
+        suggestedDisplayName: "Contoso",
+        entityId: "Contoso Retail",
+        contentUrl: baseUrl + "/index.html#/home",
+        websiteUrl: baseUrl + "/index.html#/home",
       });
       saveEvent.notifySuccess();
     });

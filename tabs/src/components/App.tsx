@@ -32,7 +32,7 @@ export default function App() {
       themeName = teamsHighContrastTheme;
       break;
     default:
-      themeName = teamsLightTheme;
+      themeName = teamsDarkTheme;
   }
 
   return (

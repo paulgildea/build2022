@@ -8,6 +8,7 @@ export default function Tab() {
   const { themeString } = useTeamsFx();
   return (
     <div className={themeString === "default" ? "" : "dark"}>
+      
       <Welcome showFunction={showFunction} />
     </div>
   );
