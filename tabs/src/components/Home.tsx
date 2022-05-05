@@ -1,24 +1,20 @@
-import React from "react";
+import React, { useEffect, FC } from "react";
 import { useTeamsFx } from "./sample/lib/useTeamsFx";
-import { makeStyles, shorthands } from "@fluentui/react-components";
+import { Spinner } from "@fluentui/react-components/unstable";
 import { View, Escape, MediaEntity, SectionProps } from "@fluent-blocks/react";
 import { ThemeName } from "@fluent-blocks/schemas";
 import basicIcons from "@fluent-blocks/basic-icons/basic-icons.svg";
 import Revenue from "./escapes/Revenue";
 import Shareable from "./escapes/Shareable";
+import Toolbar from "./escapes/Toolbar";
 import { Graph } from "./sample/Graph";
 
-const useStyles = makeStyles({
-  reset: {
-    ...shorthands.margin(0),
-    ...shorthands.padding(0),
-  }
-})
+interface HomeProps {
+  theme: string;
+}
 
-export default function Home() {
-  const { themeString } = useTeamsFx();
-  const classes = useStyles();
-
+const Home: FC<HomeProps> = ({theme}) => {
+  
   const d0 = {} as SectionProps;
  
   const d1 = {
@@ -217,7 +213,13 @@ export default function Home() {
 
   return (
     <div>
-      <View main={d2} accentScheme="web" themeName={(themeString === "contrast") ? "highContrast" as ThemeName : themeString as ThemeName} iconSpriteUrl={basicIcons} />
+      <Toolbar />
+      <View main={d2} 
+      accentScheme="web" 
+      themeName={(theme === "contrast") ? "highContrast" as ThemeName : theme as ThemeName}
+      iconSpriteUrl={basicIcons} />
     </div>
   );
 }
+
+export default Home;

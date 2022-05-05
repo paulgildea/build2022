@@ -1,0 +1,40 @@
+{
+    "solution": {
+        "teamsAppTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "subscriptionId": "b0f439f5-7b76-4e21-9aa2-6177bb1cb5c7",
+        "subscriptionName": "Windows Azure MSDN - Visual Studio Ultimate",
+        "tenantId": "88e58507-ac1c-4238-9307-238915617e43",
+        "needCreateResourceGroup": true,
+        "resourceGroupName": "contoso-msa-rg",
+        "location": "West US",
+        "resourceNameSuffix": "a0889a",
+        "provisionSucceeded": true
+    },
+    "fx-resource-appstudio": {
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "teamsAppId": "9602032c-5f7f-4bbb-9d1d-1b390aeab46c",
+        "teamsAppUpdatedAt": 1651592554201
+    },
+    "fx-resource-identity": {
+        "identityName": "contosomsac7920b",
+        "identityResourceId": "/subscriptions/b0f439f5-7b76-4e21-9aa2-6177bb1cb5c7/resourceGroups/contoso-msa-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/contosomsac7920b",
+        "identityClientId": "83b0bbbe-4473-4da6-8db4-8df147b7aef9"
+    },
+    "fx-resource-aad-app-for-teams": {
+        "clientId": "8530c3b3-1c42-42be-ac5a-38890685d9b4",
+        "clientSecret": "{{fx-resource-aad-app-for-teams.clientSecret}}",
+        "objectId": "7182e197-e799-4ce4-ace5-9bc0175e4eaf",
+        "oauth2PermissionScopeId": "d26dd187-70a2-4e05-ac81-b1c7c154b7a1",
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "oauthHost": "https://login.microsoftonline.com",
+        "oauthAuthority": "https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "applicationIdUris": "api://contosomsac7920btab.z22.web.core.windows.net/8530c3b3-1c42-42be-ac5a-38890685d9b4"
+    },
+    "fx-resource-frontend-hosting": {
+        "domain": "contosomsac7920btab.z22.web.core.windows.net",
+        "endpoint": "https://contosomsac7920btab.z22.web.core.windows.net",
+        "indexPath": "/index.html#",
+        "storageResourceId": "/subscriptions/b0f439f5-7b76-4e21-9aa2-6177bb1cb5c7/resourceGroups/contoso-msa-rg/providers/Microsoft.Storage/storageAccounts/contosomsac7920btab"
+    },
+    "fx-resource-cicd": {}
+}
