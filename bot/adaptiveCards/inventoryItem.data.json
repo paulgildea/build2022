@@ -1,0 +1,15 @@
+{
+    "title": "Cotton shirt launch",
+    "description": "The ‘’Cotton linen casual shirt’’ line is scheduled for launch on 05/25, please pull together the launch program.",
+    "dueDate": "5/25/2022",
+    "priority": "P1",
+    "createdBy": {
+        "name": "Paul G",
+        "url": "https://contosomsac7920btab.z22.web.core.windows.net/paul.jpg"
+    },
+    "assignedTo": {
+        "name": "Alex P",
+        "url": "https://contosomsac7920btab.z22.web.core.windows.net/alex.jpg"
+    },
+    "image": "https://contosomsac7920btab.z22.web.core.windows.net/launchShirt.png"
+}

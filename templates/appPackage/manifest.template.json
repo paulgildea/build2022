@@ -24,23 +24,104 @@
     },
     "accentColor": "#FFFFFF",
     "bots": [],
-    "composeExtensions": [],
+    "composeExtensions": [
+        {
+            "botId": "{{state.fx-resource-bot.botId}}",
+            "commands": [
+                {
+                    "id": "createCard",
+                    "context": [
+                        "compose"
+                    ],
+                    "description": "Command to run action to create a Card from Compose Box",
+                    "title": "Create Card",
+                    "type": "action",
+                    "parameters": [
+                        {
+                            "name": "title",
+                            "title": "Card title",
+                            "description": "Title for the card",
+                            "inputType": "text"
+                        },
+                        {
+                            "name": "subTitle",
+                            "title": "Subtitle",
+                            "description": "Subtitle for the card",
+                            "inputType": "text"
+                        },
+                        {
+                            "name": "text",
+                            "title": "Text",
+                            "description": "Text for the card",
+                            "inputType": "textarea"
+                        }
+                    ]
+                },
+                {
+                    "id": "shareMessage",
+                    "context": [
+                        "message"
+                    ],
+                    "description": "Test command to run action on message context (message sharing)",
+                    "title": "Share Message",
+                    "type": "action",
+                    "parameters": [
+                        {
+                            "name": "includeImage",
+                            "title": "Include Image",
+                            "description": "Include image in Hero Card",
+                            "inputType": "toggle"
+                        }
+                    ]
+                },
+                {
+                    "id": "searchQuery",
+                    "context": [
+                        "compose",
+                        "commandBox"
+                    ],
+                    "description": "Test command to run query",
+                    "title": "Search",
+                    "type": "query",
+                    "parameters": [
+                        {
+                            "name": "searchQuery",
+                            "title": "Search Query",
+                            "description": "Your search query",
+                            "inputType": "text"
+                        }
+                    ]
+                }
+            ],
+            "messageHandlers": [
+                {
+                    "type": "link",
+                    "value": {
+                        "domains": [
+                            "*.botframework.com",
+                            "contosomsac7920btab.z22.web.core.windows.net"
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
     "configurableTabs": [
         {
-            "configurationUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/config",
+            "configurationUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/config?meeting={meetingId}&theme={theme}",
             "canUpdateConfiguration": true,
             "scopes": [
                 "team",
                 "groupchat"
             ],
-            "context":[
+            "context": [
                 "channelTab",
                 "privateChatTab",
                 "meetingChatTab",
                 "meetingDetailsTab",
                 "meetingSidePanel",
                 "meetingStage"
-             ]
+            ]
         }
     ],
     "staticTabs": [
@@ -76,7 +157,9 @@
         "identity",
         "messageTeamMembers"
     ],
-    "validDomains": [],
+    "validDomains": [
+        "contosomsac7920btab.z22.web.core.windows.net"
+    ],
     "webApplicationInfo": {
         "id": "{{state.fx-resource-aad-app-for-teams.clientId}}",
         "resource": "{{{state.fx-resource-aad-app-for-teams.applicationIdUris}}}"

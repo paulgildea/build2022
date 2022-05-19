@@ -1,0 +1,52 @@
+{
+    "solution": {
+        "teamsAppTenantId": "a82cee5c-7137-441e-936b-0d190143f58b",
+        "subscriptionId": "b0f439f5-7b76-4e21-9aa2-6177bb1cb5c7",
+        "subscriptionName": "Windows Azure MSDN - Visual Studio Ultimate",
+        "tenantId": "88e58507-ac1c-4238-9307-238915617e43",
+        "needCreateResourceGroup": false,
+        "resourceGroupName": "contoso-msa-rg",
+        "location": "westus",
+        "resourceNameSuffix": "044339",
+        "provisionSucceeded": true
+    },
+    "fx-resource-appstudio": {
+        "tenantId": "a82cee5c-7137-441e-936b-0d190143f58b",
+        "teamsAppId": "e6ccb8c4-f4d8-4340-8277-1c4917f60957",
+        "teamsAppUpdatedAt": 1652910428837
+    },
+    "fx-resource-identity": {
+        "identityName": "contosoretjmce1474",
+        "identityResourceId": "/subscriptions/b0f439f5-7b76-4e21-9aa2-6177bb1cb5c7/resourceGroups/contoso-msa-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/contosoretjmce1474",
+        "identityClientId": "a2292da3-0478-4419-b17f-bb78dd35d829"
+    },
+    "fx-resource-bot": {
+        "botId": "30f8e58d-cb66-4838-82e6-ad5b6bbedb3e",
+        "botPassword": "{{fx-resource-bot.botPassword}}",
+        "objectId": "8f2d1552-6c98-4dab-a88c-e35d08e3af0e",
+        "skuName": "F1",
+        "siteName": "contosoretjmce1474bot",
+        "validDomain": "contosoretjmce1474bot.azurewebsites.net",
+        "appServicePlanName": "contosoretjmce1474bot",
+        "botWebAppResourceId": "/subscriptions/b0f439f5-7b76-4e21-9aa2-6177bb1cb5c7/resourceGroups/contoso-msa-rg/providers/Microsoft.Web/sites/contosoretjmce1474bot",
+        "siteEndpoint": "https://contosoretjmce1474bot.azurewebsites.net"
+    },
+    "fx-resource-aad-app-for-teams": {
+        "clientId": "c87a1e5b-e2d6-4bb2-8070-d25d84445560",
+        "clientSecret": "{{fx-resource-aad-app-for-teams.clientSecret}}",
+        "objectId": "d2cad5da-2644-48b8-a39e-38f9d63efd5f",
+        "oauth2PermissionScopeId": "142a5395-e5c3-48fe-95c4-d09f67b3b6f1",
+        "tenantId": "a82cee5c-7137-441e-936b-0d190143f58b",
+        "oauthHost": "https://login.microsoftonline.com",
+        "oauthAuthority": "https://login.microsoftonline.com/a82cee5c-7137-441e-936b-0d190143f58b",
+        "applicationIdUris": "api://contosoretjmce1474tab.z22.web.core.windows.net/botid-30f8e58d-cb66-4838-82e6-ad5b6bbedb3e"
+    },
+    "fx-resource-frontend-hosting": {
+        "domain": "contosoretjmce1474tab.z22.web.core.windows.net",
+        "endpoint": "https://contosoretjmce1474tab.z22.web.core.windows.net",
+        "indexPath": "/index.html#",
+        "storageResourceId": "/subscriptions/b0f439f5-7b76-4e21-9aa2-6177bb1cb5c7/resourceGroups/contoso-msa-rg/providers/Microsoft.Storage/storageAccounts/contosoretjmce1474tab"
+    },
+    "fx-resource-cicd": {},
+    "fx-resource-api-connector": {}
+}

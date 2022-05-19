@@ -1,0 +1,117 @@
+[
+    {
+        "title": "Cotton causal long sleeve",
+        "status": "The ‘’Cotton linen casual shirt’’ line is scheduled for launch on 05/25, please pull together the launch program.",
+        "dueDate": "5/25/2022",
+        "priority": "P1",
+        "createdBy": {
+            "name": "Paul G",
+            "url": "https://contosomsac7920btab.z22.web.core.windows.net/paul.jpg"
+        },
+        "assignedTo": {
+            "name": "Alex P",
+            "url": "https://contosomsac7920btab.z22.web.core.windows.net/alex.jpg"
+        },
+        "image": "https://contosomsac7920btab.z22.web.core.windows.net/1.png",
+        "material": "100% Cotton",
+        "width": "33 inch",
+        "height": "45 inch",
+        "description": "This Cotton causal long sleeve is made of quality mid-weight 100% cotton. It comes in a variety of fits and sizes for all types of customers. Quality chain stitched hems brings an extra level of detail to the garment.",
+        "manufacturer": "Contoso Company",
+        "stock": "21112",
+        "dimension": "15.7”L 5.1”W 9.8”H",
+        "countryoforigin": "USA"
+
+    },
+    {
+        "title":"Basic blue t-shirt",
+        "image": "https://contosomsac7920btab.z22.web.core.windows.net/2.png",
+        "material": "100% Cotton",
+        "width": "33 inch",
+        "height": "45 inch",
+        "description": "This Basic blue t-shirt is made of quality mid-weight 100% cotton. It comes in a variety of fits and sizes for all types of customers. Quality chain stitched hems brings an extra level of detail to the garment.",
+        "manufacturer": "Contoso Company",
+        "stock": "21112",
+        "dimension": "15.7”L 5.1”W 9.8”H",
+        "countryoforigin": "USA",
+        "dueDate": "5/25/2022"
+    },
+    {
+        "title":"Essential purple t-shirt",
+        "image": "https://contosomsac7920btab.z22.web.core.windows.net/3.png",
+        "material": "100% Cotton",
+        "width": "33 inch",
+        "height": "45 inch",
+        "description": "This Essential purple t-shirt is made of quality mid-weight 100% cotton. It comes in a variety of fits and sizes for all types of customers. Quality chain stitched hems brings an extra level of detail to the garment.",
+        "manufacturer": "Contoso Company",
+        "stock": "21112",
+        "dimension": "15.7”L 5.1”W 9.8”H",
+        "countryoforigin": "USA",
+        "dueDate": "5/25/2022"
+    },
+    {
+        "title":"Causal mint long sleeve",
+        "image": "https://contosomsac7920btab.z22.web.core.windows.net/4.png",
+        "material": "100% Cotton",
+        "width": "33 inch",
+        "height": "45 inch",
+        "description": "This Casusal mint long sleeve is made of quality mid-weight 100% cotton. It comes in a variety of fits and sizes for all types of customers. Quality chain stitched hems brings an extra level of detail to the garment.",
+        "manufacturer": "Contoso Company",
+        "stock": "21112",
+        "dimension": "15.7”L 5.1”W 9.8”H",
+        "countryoforigin": "USA",
+        "dueDate": "5/25/2022"
+    },
+    {
+        "title":"Cotton blue long sleeve",
+        "image": "https://contosomsac7920btab.z22.web.core.windows.net/5.png",
+        "material": "100% Cotton",
+        "width": "33 inch",
+        "height": "45 inch",
+        "description": "This Cotton blue long sleeve is made of quality mid-weight 100% cotton. It comes in a variety of fits and sizes for all types of customers. Quality chain stitched hems brings an extra level of detail to the garment.",
+        "manufacturer": "Contoso Company",
+        "stock": "21112",
+        "dimension": "15.7”L 5.1”W 9.8”H",
+        "countryoforigin": "USA",
+        "dueDate": "5/25/2022"
+    },
+    {
+        "title":"Pink summer blouse",
+        "image": "https://contosomsac7920btab.z22.web.core.windows.net/6.png",
+        "material": "100% Cotton",
+        "width": "33 inch",
+        "height": "45 inch",
+        "description": "This Pink summer blouse is made of quality mid-weight 100% cotton. It comes in a variety of fits and sizes for all types of customers. Quality chain stitched hems brings an extra level of detail to the garment.",
+        "manufacturer": "Contoso Company",
+        "stock": "21112",
+        "dimension": "15.7”L 5.1”W 9.8”H",
+        "countryoforigin": "USA",
+        "dueDate": "5/25/2022"
+    },
+    {
+        "title":"Blue long cardigan",
+        "image": "https://contosomsac7920btab.z22.web.core.windows.net/7.png",
+        "material": "100% Cotton",
+        "width": "33 inch",
+        "height": "45 inch",
+        "description": "This Blue long cardigan is made of quality mid-weight 100% cotton. It comes in a variety of fits and sizes for all types of customers. Quality chain stitched hems brings an extra level of detail to the garment.",
+        "manufacturer": "Contoso Company",
+        "stock": "21112",
+        "dimension": "15.7”L 5.1”W 9.8”H",
+        "countryoforigin": "USA",
+        "dueDate": "5/25/2022"
+    },
+    {
+        "title":"Summer yellow tank top",
+        "image": "https://contosomsac7920btab.z22.web.core.windows.net/8.png",
+        "material": "100% Cotton",
+        "width": "33 inch",
+        "height": "45 inch",
+        "description": "This Summer yellow tank top is made of quality mid-weight 100% cotton. It comes in a variety of fits and sizes for all types of customers. Quality chain stitched hems brings an extra level of detail to the garment."
+        ,"manufacturer": "Contoso Company",
+        "stock": "21112",
+        "dimension": "15.7”L 5.1”W 9.8”H",
+        "countryoforigin": "USA",
+        "dueDate": "5/25/2022"
+    }
+]

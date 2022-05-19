@@ -24,6 +24,16 @@ main > section > div {
 	min-height: 200px !important;
 }
 
+div.inv > div {
+	background-color: transparent !important;
+}
+div.inv main {
+	background-color: transparent !important;
+}
+div.inv main > section {
+	background-color: transparent !important;
+}
+
 @media only screen and (max-width: 280px) {
     main {
 		padding: 0px !important;

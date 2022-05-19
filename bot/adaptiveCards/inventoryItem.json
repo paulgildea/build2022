@@ -1,0 +1,173 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "size": "Large",
+                            "weight": "Bolder",
+                            "text": "${title}"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "size": "Default",
+                            "weight": "Default",
+                            "text": "${description}",
+                            "wrap": true,
+                            "spacing": "None"
+                        },
+                        {
+                            "type": "ColumnSet",
+                            "columns": [
+                                {
+                                    "type": "Column",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Due date",
+                                            "weight": "Bolder"
+                                        },
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Priority",
+                                            "weight": "Bolder",
+                                            "spacing": "Small"
+                                        },
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Created By",
+                                            "weight": "Bolder",
+                                            "spacing": "Small"
+                                        },
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Assigned To",
+                                            "weight": "Bolder",
+                                            "spacing": "Small"
+                                        }
+                                    ],
+                                    "width": "auto"
+                                },
+                                {
+                                    "type": "Column",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "${dueDate}"
+                                        },
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "${priority}",
+                                            "spacing": "Small"
+                                        },
+                                        {
+                                            "type": "ColumnSet",
+                                            "spacing": "None",
+                                            "columns": [
+                                                {
+                                                    "type": "Column",
+                                                    "items": [
+                                                        {
+                                                            "type": "Image",
+                                                            "spacing": "None",
+                                                            "url": "${createdBy.url}",
+                                                            "size": "Small",
+                                                            "style": "Person"
+                                                        }
+                                                    ],
+                                                    "width": "auto"
+                                                },
+                                                {
+                                                    "type": "Column",
+                                                    "spacing": "Small",
+                                                    "width": "stretch",
+                                                    "items": [
+                                                        {
+                                                            "type": "TextBlock",
+                                                            "spacing": "None",
+                                                            "text": "${createdBy.name}"
+                                                        }
+                                                    ],
+                                                    "verticalContentAlignment": "Bottom"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "ColumnSet",
+                                            "spacing": "None",
+                                            "columns": [
+                                                {
+                                                    "type": "Column",
+                                                    "items": [
+                                                        {
+                                                            "type": "Image",
+                                                            "spacing": "None",
+                                                            "url": "${assignedTo.url}",
+                                                            "size": "Small",
+                                                            "style": "Person"
+                                                        }
+                                                    ],
+                                                    "width": "auto"
+                                                },
+                                                {
+                                                    "type": "Column",
+                                                    "spacing": "Small",
+                                                    "width": "stretch",
+                                                    "items": [
+                                                        {
+                                                            "type": "TextBlock",
+                                                            "spacing": "None",
+                                                            "text": "${assignedTo.name}"
+                                                        }
+                                                    ],
+                                                    "verticalContentAlignment": "Bottom"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "width": "auto"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "${image}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "View Details",
+            "data": {
+                "msteams": {
+                    "type": "invoke",
+                    "value": {
+                        "type": "tab/tabInfoAction",
+                        "tabInfo": {
+                            "contentUrl": "https://contosomsac7920btab.z22.web.core.windows.net/index.html#/itemDetail?id=1",
+                            "websiteUrl": "https://contosomsac7920btab.z22.web.core.windows.net/index.html#/itemDetail?id=1",
+                            "name": "${title}",
+                            "entityId": "inventory"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.4"
+}
